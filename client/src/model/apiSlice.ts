@@ -3,7 +3,7 @@ import { TableDataFromApi } from "../types";
 
 export const tableApi = createApi({
   reducerPath: "tableApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:4000" }),
   endpoints: (builder) => ({
     getTableData: builder.query<TableDataFromApi, number>({
       query: (currentPage) => `/table?currentPage=${currentPage}`,

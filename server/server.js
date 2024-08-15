@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cors());
-app.listen(8000, () => console.log(`Listening on port ${8000}`));
+app.listen(4000, () => console.log(`Listening on port ${4000}`));
 
 const TABLE_PER_PAGE = 10;
 let results = [];
